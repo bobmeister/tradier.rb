@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
 
   gem.license     = 'MIT'
 
-  gem.add_dependency 'faraday', '~> 2'
+  gem.add_dependency 'faraday', '~> 1'
   gem.add_dependency 'faraday_middleware', '~> 1.2'
   gem.add_dependency 'celluloid', '~> 0.18'
   gem.add_dependency 'multi_json', '~> 1.15'
