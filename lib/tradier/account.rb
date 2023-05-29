@@ -2,6 +2,8 @@ require 'tradier/base'
 
 module Tradier
   class Account < Tradier::Base
+    puts "Bob's Tradier gem"
+
     attr_reader :account_number, :type, :classification, :status
 
     def margin?
