@@ -38,3 +38,6 @@ test/version_tmp
 tmp
 tmtags
 tramp
+
+.idea/
+.ruby-version
