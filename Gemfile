@@ -11,7 +11,7 @@ group :test do
   gem 'rspec', '~> 3.1'
   gem 'webmock'
   gem 'simplecov', :require => false
-  gem 'coveralls', :require => false
+  # gem 'coveralls', :require => false
 end
 
 gemspec

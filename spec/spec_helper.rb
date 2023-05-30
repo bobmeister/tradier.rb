@@ -1,11 +1,11 @@
 # encoding: utf-8
 
 require 'simplecov'
-require 'coveralls'
+# require 'coveralls'
 
 SimpleCov.formatters = [
   SimpleCov::Formatter::HTMLFormatter,
-  Coveralls::SimpleCov::Formatter
+  # Coveralls::SimpleCov::Formatter
 ]
 SimpleCov.start do
   add_filter '/spec/'
