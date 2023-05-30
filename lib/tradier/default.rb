@@ -24,7 +24,7 @@ module Tradier
       }
     } unless defined? Tradier::Default::CONNECTION_OPTIONS
 
-    MIDDLEWARE = Faraday::Builder.new do |builder|
+    MIDDLEWARE = Faraday::RackBuilder.new do |builder|
       # Convert request params to "www-form-urlencoded"
       builder.use Faraday::Request::UrlEncoded
       # Parse JSON response bodies using MultiJson
@@ -64,7 +64,7 @@ module Tradier
       # @note Faraday's middleware stack implementation is comparable to that of Rack middleware.  The order of middleware is important: the first middleware on the list wraps all others, while the last middleware is the innermost one.
       # @see https://github.com/technoweenie/faraday#advanced-middleware-usage
       # @see http://mislav.uniqpath.com/2011/07/faraday-advanced-http/
-      # @return [Faraday::Builder]
+      # @return [Faraday::RackBuilder]
       def middleware
         MIDDLEWARE
       end

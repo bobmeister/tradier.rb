@@ -15,11 +15,11 @@ Gem::Specification.new do |gem|
 
   gem.license     = 'MIT'
 
-  gem.add_dependency 'faraday', '~> 0.8'
-  gem.add_dependency 'faraday_middleware'
-  gem.add_dependency 'celluloid'
-  gem.add_dependency 'multi_json'
-  gem.add_development_dependency 'bundler', '~> 1'
+  gem.add_dependency 'faraday', '~> 1'
+  gem.add_dependency 'faraday_middleware', '~> 1.2'
+  gem.add_dependency 'celluloid', '~> 0.18'
+  gem.add_dependency 'multi_json', '~> 1.15'
+  gem.add_development_dependency 'bundler', '~> 2'
 
   gem.files = %w(.yardopts LICENSE.md README.md Rakefile tradier.gemspec)
   gem.files += Dir.glob("lib/**/*.rb")
